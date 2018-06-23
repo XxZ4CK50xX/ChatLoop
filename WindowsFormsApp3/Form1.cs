@@ -103,9 +103,8 @@ namespace WindowsFormsApp3
 
         private void button5_Click(object sender, EventArgs e)
         {
-            String Saved_Module = Path.Combine("C:\\Module");
-        }
-            allrtb.SaveFile(Saved_Module, RichTextBoxStreamType.PlainText);
+            string filename = "zackfixthisfilenamebit.txt";
+            File.WriteAllText(filename, richTextBox1.Text);
         }
     }
 }
