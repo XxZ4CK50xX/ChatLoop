@@ -103,8 +103,9 @@ namespace WindowsFormsApp3
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string filename = (textBox2.Text);.txt
+            string filename = "zackfixthisfilenamebit.txt";
             File.WriteAllText(filename, richTextBox1.Text);
-            }
         }
     }
+}
+
