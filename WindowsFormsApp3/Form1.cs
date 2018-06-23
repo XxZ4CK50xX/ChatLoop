@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
 namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
@@ -49,17 +48,9 @@ namespace WindowsFormsApp3
 
         }
 
-
-
-
-
-        private void button4_Click(object sender, EventArgs e)
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
-
-            {
-
-            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -79,7 +70,7 @@ namespace WindowsFormsApp3
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("notepad.exe");
         }
 
         private void button4_Click_1(object sender, EventArgs e)
@@ -94,7 +85,10 @@ namespace WindowsFormsApp3
                 richTextBox1.Text = filetext;
             }
         }
+    }
+}
 
+<<<<<<< HEAD
         private void button5_Click(object sender, EventArgs e)
         {
             SafeFileDialog saveFileDialog = new SaveFileDialog();
@@ -113,3 +107,5 @@ namespace WindowsFormsApp3
 
 
         }
+=======
+>>>>>>> 572f217743df3b61971a9a092f210dbcd73808b3
