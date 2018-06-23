@@ -44,9 +44,9 @@ namespace WindowsFormsApp3
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 334);
+            this.button1.Location = new System.Drawing.Point(12, 354);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 45);
+            this.button1.Size = new System.Drawing.Size(275, 45);
             this.button1.TabIndex = 0;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -54,9 +54,9 @@ namespace WindowsFormsApp3
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(281, 334);
+            this.button2.Location = new System.Drawing.Point(297, 354);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 45);
+            this.button2.Size = new System.Drawing.Size(275, 45);
             this.button2.TabIndex = 1;
             this.button2.Text = "Stop";
             this.button2.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@ namespace WindowsFormsApp3
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(15, 300);
+            this.button3.Location = new System.Drawing.Point(15, 320);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(526, 28);
+            this.button3.Size = new System.Drawing.Size(557, 28);
             this.button3.TabIndex = 2;
             this.button3.Text = "Make Preset";
             this.button3.UseVisualStyleBackColor = true;
@@ -80,9 +80,10 @@ namespace WindowsFormsApp3
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(406, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Delay (ms)";
             // 
@@ -90,26 +91,27 @@ namespace WindowsFormsApp3
             // 
             this.textBox1.Location = new System.Drawing.Point(468, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(86, 20);
+            this.textBox1.Size = new System.Drawing.Size(86, 22);
             this.textBox1.TabIndex = 4;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.Location = new System.Drawing.Point(409, 38);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(88, 17);
+            this.checkBox1.Size = new System.Drawing.Size(93, 17);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Disable Loop";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(15, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(385, 282);
+            this.richTextBox1.Size = new System.Drawing.Size(385, 302);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
             // 
@@ -117,6 +119,8 @@ namespace WindowsFormsApp3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.checkBox1);
@@ -125,6 +129,8 @@ namespace WindowsFormsApp3
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "ChatLoop [BUILD 0.3.1]";
