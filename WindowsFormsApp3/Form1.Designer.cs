@@ -43,7 +43,11 @@
             // 
             this.button1.Location = new System.Drawing.Point(3, 334);
             this.button1.Name = "button1";
+<<<<<<< HEAD
             this.button1.Size = new System.Drawing.Size(272, 43);
+=======
+            this.button1.Size = new System.Drawing.Size(249, 37);
+>>>>>>> fa24167180b0d48b03bd15b9b0cfbeda8a8b230d
             this.button1.TabIndex = 0;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -51,9 +55,15 @@
             // 
             // button2
             // 
+<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(281, 334);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(263, 43);
+=======
+            this.button2.Location = new System.Drawing.Point(267, 340);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(273, 37);
+>>>>>>> fa24167180b0d48b03bd15b9b0cfbeda8a8b230d
             this.button2.TabIndex = 1;
             this.button2.Text = "Stop";
             this.button2.UseVisualStyleBackColor = true;
