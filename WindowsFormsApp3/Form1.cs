@@ -95,24 +95,21 @@ namespace WindowsFormsApp3
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)}
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SafeFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Title = "Save File";
+            saveFileDialog.Filter = "Text Files (*.txt) |*.txt | All Files (*.*) | *.*";
 
-    namespace SaveFileDialog
-
-    {
-        class  SaveFileDialog 
-            // Create a SaveFileDialog to request a path and file name to save to.
-            SaveFileDialog  saveFile1  = new SaveFileDialog();
-
-            // Initialize the SaveFileDialog to specify the RTF extension for the file.
-            saveFile1.DefaultExt = "*.txt";
-            saveFile1.Filter = "Preset |*.txt";
-
-            // Determine if the user selected a file name from the saveFileDialog.
-            if (saveFile1.ShowDialog() == System.Windows.Forms.DialogResult.OK &&
-               saveFile1.FileName.Length > 0)
+                if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                // Save the contents of the RichTextBox into the file.
-                richTextBox1.SaveFile(saveFile1.FileName, RichTextBoxStreamType.PlainText);
+                StreamWriter write = new StreamWriter(File.Create(saveFileDialog.FileName));
+
+                object txtArea = null;
+                write.Write(txtArea.Text);
+
             }
+
+
+
         }
