@@ -35,7 +35,7 @@ namespace WindowsFormsApp3
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            
             SendKeys.Send("{ENTER}");
         }
 
@@ -51,10 +51,6 @@ namespace WindowsFormsApp3
 
 
 
-        private void Button3_Click_1(object sender, EventArgs e)
-        {
-       
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -82,6 +78,11 @@ namespace WindowsFormsApp3
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("notepad.exe");
         }
     }
 }
