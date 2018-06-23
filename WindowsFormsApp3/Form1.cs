@@ -101,7 +101,7 @@ namespace WindowsFormsApp3
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SafeFileDialog sfd = new SaveFileDialog();
+            SaveFileDialog sfd = new SaveFileDialog();
             if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK) ;
             {
                 using (Stream s = File.Open(sfd.FileName, FileMode.CreateNew)) ;
