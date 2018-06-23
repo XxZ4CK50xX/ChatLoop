@@ -68,9 +68,10 @@ namespace WindowsFormsApp3
             }
         }
 
-
-
-
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            timer1.Interval = Convert.ToInt32(textBox1.Text);
+        }
     }
 }
 
