@@ -85,7 +85,6 @@ namespace WindowsFormsApp3
                 richTextBox1.Text = filetext;
             }
         }
-<<<<<<< HEAD
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -109,7 +108,6 @@ namespace WindowsFormsApp3
             }
         }
     }
-=======
     }
 }
         private void button5_Click(object sender, EventArgs e)
