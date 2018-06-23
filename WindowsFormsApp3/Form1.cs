@@ -1,6 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
@@ -66,8 +73,20 @@ namespace WindowsFormsApp3
             System.Diagnostics.Process.Start("notepad.exe");
         }
 
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Stream myStream;
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK) ;
+            {
+                if ((myStream = openFileDialog1.OpenFile()) != null) ;
+                string strfilename = openFileDialog1.FileName;
+                string filetext = File.ReadAllText(strfilename);
+                richTextBox1.Text = filetext;
+            }
+        }
 
-          private void label2_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
@@ -82,27 +101,11 @@ namespace WindowsFormsApp3
 
         }
 
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Text Files|*.txt";
-
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                textBox1.Text = System.IO.File.ReadAllText(ofd.FileName);
-
-            }
-
-        }
         private void button5_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "Text Files|*.txt";
-
-            if (sfd.ShowDialog() == DialogResult.OK)
-            {
-                System.IO.File.WriteAllText(sfd.FileName, textBox1.Text);
-            }
+            String Saved_Module = Path.Combine("C:\\Module");
+        }
+            allrtb.SaveFile(Saved_Module, RichTextBoxStreamType.PlainText);
         }
     }
 }
