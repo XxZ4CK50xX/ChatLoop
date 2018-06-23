@@ -41,13 +41,16 @@ namespace WindowsFormsApp3
             this.button3 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(12, 354);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(275, 45);
+            this.button1.Size = new System.Drawing.Size(300, 45);
             this.button1.TabIndex = 0;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -55,9 +58,9 @@ namespace WindowsFormsApp3
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(297, 354);
+            this.button2.Location = new System.Drawing.Point(306, 354);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(275, 45);
+            this.button2.Size = new System.Drawing.Size(300, 45);
             this.button2.TabIndex = 1;
             this.button2.Text = "Stop";
             this.button2.UseVisualStyleBackColor = true;
@@ -72,7 +75,7 @@ namespace WindowsFormsApp3
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(406, 15);
+            this.label1.Location = new System.Drawing.Point(455, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 3;
@@ -80,7 +83,7 @@ namespace WindowsFormsApp3
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(468, 12);
+            this.textBox1.Location = new System.Drawing.Point(520, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(86, 22);
             this.textBox1.TabIndex = 4;
@@ -90,7 +93,7 @@ namespace WindowsFormsApp3
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(409, 38);
+            this.checkBox1.Location = new System.Drawing.Point(461, 40);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(93, 17);
             this.checkBox1.TabIndex = 5;
@@ -102,7 +105,7 @@ namespace WindowsFormsApp3
             // 
             this.button3.Location = new System.Drawing.Point(12, 325);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(560, 23);
+            this.button3.Size = new System.Drawing.Size(594, 23);
             this.button3.TabIndex = 7;
             this.button3.Text = "Make Preset";
             this.button3.UseVisualStyleBackColor = true;
@@ -110,15 +113,16 @@ namespace WindowsFormsApp3
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(363, 317);
+            this.richTextBox1.Size = new System.Drawing.Size(342, 307);
             this.richTextBox1.TabIndex = 8;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(438, 92);
+            this.button4.Location = new System.Drawing.Point(438, 120);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 9;
@@ -126,13 +130,45 @@ namespace WindowsFormsApp3
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(420, 300);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(134, 22);
+            this.textBox2.TabIndex = 10;
+            this.textBox2.TextChanged += new System.EventHandler(this.textbox2_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(360, 303);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "FIlename:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(560, 299);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(46, 23);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "Save";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(584, 411);
+            this.ClientSize = new System.Drawing.Size(618, 411);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button3);
@@ -142,7 +178,6 @@ namespace WindowsFormsApp3
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "ChatLoop [BUILD 0.3.1]";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -163,6 +198,9 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button5;
     }
 }
 

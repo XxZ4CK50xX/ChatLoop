@@ -85,6 +85,26 @@ namespace WindowsFormsApp3
                 richTextBox1.Text = filetext;
             }
         }
-    }
-}
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textbox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string filename = (textBox2.Text);.txt
+            File.WriteAllText(filename, richTextBox1.Text);
+            }
+        }
+    }
