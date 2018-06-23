@@ -67,16 +67,6 @@ namespace WindowsFormsApp3
             this.timer1.Interval = 70;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(15, 320);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(557, 28);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Make Preset";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -117,9 +107,9 @@ namespace WindowsFormsApp3
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(15, 301);
+            this.button3.Location = new System.Drawing.Point(12, 325);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(526, 23);
+            this.button3.Size = new System.Drawing.Size(560, 23);
             this.button3.TabIndex = 7;
             this.button3.Text = "Make Preset";
             this.button3.UseVisualStyleBackColor = true;
