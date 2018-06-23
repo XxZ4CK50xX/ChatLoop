@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp3
+﻿using System;
+
+namespace WindowsFormsApp3
 {
     partial class Form1
     {
@@ -73,7 +75,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Make Preset";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.button3.Click += new System.EventHandler(this.Button3_Click_1);
             // 
             // label1
             // 
@@ -143,6 +145,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private EventHandler richTextBox1_TextChanged;
     }
 }
 

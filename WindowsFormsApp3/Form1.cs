@@ -51,9 +51,9 @@ namespace WindowsFormsApp3
 
 
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void Button3_Click_1(object sender, EventArgs e)
         {
-          
+            if  richTextBox1.TextChanged += new EventHandler(richTextBox1_TextChanged);
         }
 
         private void button4_Click(object sender, EventArgs e)
