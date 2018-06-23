@@ -135,6 +135,7 @@ namespace WindowsFormsApp3
             this.button5.TabIndex = 10;
             this.button5.Text = "Save Text File";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 

@@ -59,7 +59,7 @@ namespace WindowsFormsApp3
         private void button4_Click(object sender, EventArgs e)
         {
 
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            System.Windows.Forms.SaveFileDialog saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             saveFileDialog1.Filter = "Preset|*.txt";
             saveFileDialog1.Title = "Save Preset";
             if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -95,13 +95,27 @@ namespace WindowsFormsApp3
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK) ;
             {
-                if ((myStream = openFileDialog1.OpenFile()) != null);
-                    string strfilename = openFileDialog1.FileName;
+                if ((myStream = openFileDialog1.OpenFile()) != null) ;
+                string strfilename = openFileDialog1.FileName;
                 string filetext = File.ReadAllText(strfilename);
                 richTextBox1.Text = filetext;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SafeFileDialog sfd = new SafeFileDialog();
+            if (sfd.ShowDialog() == DialogResult.OK) ;
+            {
+                using (Stream s = File.Open(sfd.FileName, FileMode.CreateNew)) ;
+                using (StreamWriter sw = new StreamWriter(s))
+                {
+                    sw.Write(richTextBox1.Text);
+
                 }
             }
         }
-    } 
+    }
+}
 
 
