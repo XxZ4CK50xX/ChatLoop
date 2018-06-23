@@ -15,10 +15,6 @@ namespace WindowsFormsApp3
 
         int uppy = 0;
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
 
         private void button1_Click(object sender, EventArgs e)
 
@@ -28,7 +24,10 @@ namespace WindowsFormsApp3
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            int Lines = richTextBox1.Lines.Count();
+            Lines -= String.IsNullOrWhiteSpace(richTextBox1.Lines.Last()) ? 1 : 0;
             timer1.Enabled = true;
+            int lastNum = Lines;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -38,9 +37,12 @@ namespace WindowsFormsApp3
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            SendKeys.Send(richTextBox1.Lines[(this.uppy)]);
+            string text = (richTextBox1.Lines[(this.uppy)]);
+            Clipboard.SetText(text);
+            SendKeys.Send("^{v}");
             SendKeys.Send("{ENTER}");
             uppy = uppy + 1;
+            if (Lines < uppy) { uppy = 1; }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
