@@ -87,8 +87,6 @@ namespace WindowsFormsApp3
         }
     }
 }
-
-<<<<<<< HEAD
         private void button5_Click(object sender, EventArgs e)
         {
             SafeFileDialog saveFileDialog = new SaveFileDialog();
@@ -107,5 +105,3 @@ namespace WindowsFormsApp3
 
 
         }
-=======
->>>>>>> 572f217743df3b61971a9a092f210dbcd73808b3

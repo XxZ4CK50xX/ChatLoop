@@ -126,7 +126,6 @@ namespace WindowsFormsApp3
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
-<<<<<<< HEAD
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(438, 163);
@@ -137,8 +136,7 @@ namespace WindowsFormsApp3
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-=======
->>>>>>> 572f217743df3b61971a9a092f210dbcd73808b3
+
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
