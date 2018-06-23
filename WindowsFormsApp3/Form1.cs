@@ -53,16 +53,17 @@ namespace WindowsFormsApp3
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("notepad.exe");
+          
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "Formatter|*.bat";
-            openFileDialog1.Title = "Select The Formatter";
-            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Preset|*.txt";
+            saveFileDialog1.Title = "Save Preset";
+            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                System.Diagnostics.Process.Start("notepad.exe");
             {
 
             }
