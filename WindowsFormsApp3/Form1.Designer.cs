@@ -75,7 +75,7 @@ namespace WindowsFormsApp3
             this.button3.TabIndex = 2;
             this.button3.Text = "Make Preset";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click_1);
+            this.button3.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label1
             // 
