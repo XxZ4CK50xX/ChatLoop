@@ -75,7 +75,7 @@ namespace WindowsFormsApp3
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(455, 12);
+            this.label1.Location = new System.Drawing.Point(202, 304);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 3;
@@ -83,9 +83,9 @@ namespace WindowsFormsApp3
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(520, 12);
+            this.textBox1.Location = new System.Drawing.Point(266, 300);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(86, 22);
+            this.textBox1.Size = new System.Drawing.Size(68, 22);
             this.textBox1.TabIndex = 4;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -93,7 +93,7 @@ namespace WindowsFormsApp3
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(461, 40);
+            this.checkBox1.Location = new System.Drawing.Point(67, 304);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(93, 17);
             this.checkBox1.TabIndex = 5;
@@ -115,16 +115,16 @@ namespace WindowsFormsApp3
             // 
             this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(342, 307);
+            this.richTextBox1.Size = new System.Drawing.Size(594, 285);
             this.richTextBox1.TabIndex = 8;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(438, 120);
+            this.button4.Location = new System.Drawing.Point(12, 301);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(49, 23);
             this.button4.TabIndex = 9;
             this.button4.Text = "Load Text File";
             this.button4.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@ namespace WindowsFormsApp3
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(420, 300);
+            this.textBox2.Location = new System.Drawing.Point(420, 301);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(134, 22);
             this.textBox2.TabIndex = 10;
@@ -142,7 +142,7 @@ namespace WindowsFormsApp3
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(360, 303);
+            this.label2.Location = new System.Drawing.Point(358, 304);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 11;
@@ -153,7 +153,7 @@ namespace WindowsFormsApp3
             // 
             this.button5.Location = new System.Drawing.Point(547, 300);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(46, 23);
+            this.button5.Size = new System.Drawing.Size(59, 23);
             this.button5.TabIndex = 10;
             this.button5.Text = "Save";
             this.button5.UseVisualStyleBackColor = true;
@@ -178,6 +178,7 @@ namespace WindowsFormsApp3
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "ChatLoop [BUILD 0.3.1]";
             this.Load += new System.EventHandler(this.Form1_Load);
