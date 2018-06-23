@@ -12,6 +12,9 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
+
+        int uppy = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -35,8 +38,9 @@ namespace WindowsFormsApp3
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            SendKeys.Send(richTextBox1.Text);
+            SendKeys.Send(richTextBox1.Lines[(this.uppy)]);
             SendKeys.Send("{ENTER}");
+            uppy = uppy + 1;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
