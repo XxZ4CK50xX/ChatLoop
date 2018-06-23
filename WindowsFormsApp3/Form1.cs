@@ -53,22 +53,6 @@ namespace WindowsFormsApp3
 
         }
 
-
-
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Preset|*.txt";
-            saveFileDialog1.Title = "Save Preset";
-            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                System.Diagnostics.Process.Start("notepad.exe");
-            {
-
-            }
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             timer1.Interval = Convert.ToInt32(textBox1.Text);
