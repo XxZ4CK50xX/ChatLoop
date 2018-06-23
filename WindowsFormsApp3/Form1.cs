@@ -35,7 +35,7 @@ namespace WindowsFormsApp3
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            SendKeys.Send(richTextBox1);
+            SendKeys.Send(richTextBox1.Text);
             SendKeys.Send("{ENTER}");
         }
 
