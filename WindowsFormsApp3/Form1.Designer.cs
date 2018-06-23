@@ -112,7 +112,6 @@ namespace WindowsFormsApp3
             this.richTextBox1.Size = new System.Drawing.Size(385, 282);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // Form1
             // 
@@ -145,7 +144,6 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private EventHandler richTextBox1_TextChanged;
     }
 }
 
