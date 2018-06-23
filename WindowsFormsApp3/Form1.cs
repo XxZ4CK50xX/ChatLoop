@@ -8,9 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
-interface SaveFileDialog { }
-
 namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
@@ -62,7 +59,11 @@ namespace WindowsFormsApp3
         private void button4_Click(object sender, EventArgs e)
         {
 
-            
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Preset|*.txt";
+            saveFileDialog1.Title = "Save Preset";
+            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                System.Diagnostics.Process.Start("notepad.exe");
             {
 
             }
@@ -100,21 +101,6 @@ namespace WindowsFormsApp3
                 richTextBox1.Text = filetext;
             }
         }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog sfd = new SaveFileDialog();
-            if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK) ;
-            {
-                using (Stream s = File.Open(sfd.FileName, FileMode.CreateNew)) ;
-                using (StreamWriter sw = new StreamWriter(s))
-                {
-                    sw.Write(richTextBox1.Text);
-
-                }
-            }
-        }
     }
 }
-
 
