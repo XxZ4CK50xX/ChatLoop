@@ -72,6 +72,11 @@ namespace WindowsFormsApp3
         {
             timer1.Interval = Convert.ToInt32(textBox1.Text);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
