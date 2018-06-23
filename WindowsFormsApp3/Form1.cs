@@ -53,11 +53,7 @@ namespace WindowsFormsApp3
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
-            if (this.richTextBox1 != null); this.richTextBox1.TextChanged += new EventHandler(this.richTextBox1_TextChanged);
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Preset|*.txt";
-            saveFileDialog1.Title = "Save Preset";
-            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK);
+       
         }
 
         private void button4_Click(object sender, EventArgs e)
