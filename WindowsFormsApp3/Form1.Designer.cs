@@ -67,7 +67,6 @@ namespace WindowsFormsApp3
             this.timer1.Interval = 70;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-<<<<<<< HEAD
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(15, 320);
@@ -78,8 +77,6 @@ namespace WindowsFormsApp3
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click_1);
             // 
-=======
->>>>>>> 5afc64f98e13e51cdbd4871938306608e7b3e766
             // label1
             // 
             this.label1.AutoSize = true;
