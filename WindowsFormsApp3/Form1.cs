@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+interface SaveFileDialog { }
+
 namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
@@ -49,6 +51,10 @@ namespace WindowsFormsApp3
 
         }
 
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
 
 
 
@@ -56,7 +62,7 @@ namespace WindowsFormsApp3
         private void button4_Click(object sender, EventArgs e)
         {
 
-
+            
             {
 
             }
@@ -79,7 +85,7 @@ namespace WindowsFormsApp3
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("notepad.exe");
         }
 
         private void button4_Click_1(object sender, EventArgs e)
@@ -95,24 +101,20 @@ namespace WindowsFormsApp3
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)}
-
-    namespace SaveFileDialog
-
-    {
-        class  SaveFileDialog 
-            // Create a SaveFileDialog to request a path and file name to save to.
-            SaveFileDialog  saveFile1  = new SaveFileDialog();
-
-            // Initialize the SaveFileDialog to specify the RTF extension for the file.
-            saveFile1.DefaultExt = "*.txt";
-            saveFile1.Filter = "Preset |*.txt";
-
-            // Determine if the user selected a file name from the saveFileDialog.
-            if (saveFile1.ShowDialog() == System.Windows.Forms.DialogResult.OK &&
-               saveFile1.FileName.Length > 0)
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK) ;
             {
-                // Save the contents of the RichTextBox into the file.
-                richTextBox1.SaveFile(saveFile1.FileName, RichTextBoxStreamType.PlainText);
+                using (Stream s = File.Open(sfd.FileName, FileMode.CreateNew)) ;
+                using (StreamWriter sw = new StreamWriter(s))
+                {
+                    sw.Write(richTextBox1.Text);
+
+                }
             }
         }
+    }
+}
+
+
