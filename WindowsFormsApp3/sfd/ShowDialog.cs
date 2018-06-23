@@ -1,4 +1,4 @@
-﻿namespace saveFileDialog1
+﻿namespace SaveFileDialog
 {
     internal class ShowDialog
     {

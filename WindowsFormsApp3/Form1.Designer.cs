@@ -130,7 +130,6 @@ namespace WindowsFormsApp3
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
-<<<<<<< HEAD
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(420, 300);
@@ -160,19 +159,6 @@ namespace WindowsFormsApp3
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-=======
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(438, 163);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Load Text File";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-
->>>>>>> d49a926924f25b872f2d04c42de6246c9b112347
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

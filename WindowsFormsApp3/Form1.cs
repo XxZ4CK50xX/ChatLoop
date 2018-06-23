@@ -85,7 +85,6 @@ namespace WindowsFormsApp3
                 richTextBox1.Text = filetext;
             }
         }
-<<<<<<< HEAD
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -109,25 +108,3 @@ namespace WindowsFormsApp3
             }
         }
     }
-=======
-    }
-}
-        private void button5_Click(object sender, EventArgs e)
-        {
-            SafeFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Title = "Save File";
-            saveFileDialog.Filter = "Text Files (*.txt) |*.txt | All Files (*.*) | *.*";
-
-                if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                StreamWriter write = new StreamWriter(File.Create(saveFileDialog.FileName));
-
-                object txtArea = null;
-                write.Write(txtArea.Text);
-
-            }
-
-
-
-        }
->>>>>>> d49a926924f25b872f2d04c42de6246c9b112347
