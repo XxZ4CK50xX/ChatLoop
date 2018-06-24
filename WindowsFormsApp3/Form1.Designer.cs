@@ -28,7 +28,7 @@ namespace WindowsFormsApp3
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-         public void InitializeComponent()
+        private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
@@ -184,7 +184,7 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer timer1;
- 
+
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -195,4 +195,3 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.Button button5;
     }
 }
-

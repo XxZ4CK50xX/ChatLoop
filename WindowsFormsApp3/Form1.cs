@@ -14,7 +14,12 @@ namespace WindowsFormsApp3
     {
 
         int uppy = 0;
+        int lineCount = 0;
 
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
         private void button1_Click(object sender, EventArgs e)
 
@@ -41,7 +46,7 @@ namespace WindowsFormsApp3
             SendKeys.Send("^{v}");
             SendKeys.Send("{ENTER}");
             uppy = uppy + 1;
-            if (lineCount < uppy) uppy = 1;
+            if ((this.lineCount) < (this.uppy)) uppy = 1;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
