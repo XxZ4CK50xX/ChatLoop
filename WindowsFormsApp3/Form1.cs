@@ -15,6 +15,7 @@ namespace WindowsFormsApp3
 
         int uppy = 0;
         int lineCount = 0;
+        private int result;
 
         public Form1()
         {
@@ -64,7 +65,14 @@ namespace WindowsFormsApp3
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            timer1.Interval = Convert.ToInt32(textBox1.Text);
+            if (int.TryParse(textBox1.Text, out result))
+            {
+                if (int.Parse(textBox1.Text) > 0)
+                {
+                    timer1.Interval = Convert.ToInt32(textBox1.Text);
+                }
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
