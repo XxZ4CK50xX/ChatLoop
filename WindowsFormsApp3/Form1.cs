@@ -40,13 +40,18 @@ namespace WindowsFormsApp3
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int lineCount = richTextBox1.Lines.Count();
+            // int lineCount = richTextBox1.Lines.Count();
+            string textcheck = (richTextBox1.Lines[(this.uppy)]);
+            if (string.IsNullOrEmpty(textcheck))
+            {
+                uppy = 0; 
+            }
             string text = (richTextBox1.Lines[(this.uppy)]);
             Clipboard.SetText(text);
             SendKeys.Send("^{v}");
             SendKeys.Send("{ENTER}");
             uppy = uppy + 1;
-            if (lineCount-1 < (this.uppy)) uppy = 0;
+           // if (lineCount - 1 < (this.uppy)) uppy = 0;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
