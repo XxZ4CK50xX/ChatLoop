@@ -46,6 +46,7 @@ namespace WindowsFormsApp3
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(5, 390);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(325, 55);
@@ -56,6 +57,7 @@ namespace WindowsFormsApp3
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(320, 390);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(325, 55);
