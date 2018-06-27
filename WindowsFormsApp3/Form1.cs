@@ -13,7 +13,7 @@ namespace WindowsFormsApp3
     public partial class Form1 : Form
     {
 
-        int uppy = 0;
+        int uppy = 1;
         int lineCount = 0;
         private int result;
 
