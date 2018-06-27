@@ -55,7 +55,10 @@ namespace WindowsFormsApp3
             }
             catch (Exception)
             {
+                string text = (richTextBox1.Text);
                 SendKeys.Send(richTextBox1.Text);
+                Clipboard.SetText(text);
+                SendKeys.Send("^{v}");
                 SendKeys.Send("{ENTER}");
             }
         }
