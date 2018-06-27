@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace ChatLoop
 {
-    internal class SafeFileDialog
+    internal class SaveFileDialog
     {
         internal static DialogResult ShowDialog()
         {
