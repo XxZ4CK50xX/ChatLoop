@@ -72,6 +72,10 @@ namespace WindowsFormsApp3
                     timer1.Interval = Convert.ToInt32(textBox1.Text);
                 }
             }
+            else
+            {
+                timer1.Interval = Convert.ToInt32(10);
+            }
             
         }
 
